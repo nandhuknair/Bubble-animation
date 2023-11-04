@@ -1,0 +1,245 @@
+
+body{
+    background-image: url(./Images/background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: fit-content;
+    
+    
+}
+.nav-bar{
+
+    margin: 3% 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+} 
+.nav-bar img{
+    width: 160px; 
+}
+
+button{
+
+    border:2px solid #5abbfb;
+    padding: 10px 30px;
+    font-size: 16px; 
+    font-weight: 500;
+    color: #ccc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 25px;
+    background-color: transparent;
+    position: relative;
+    width: fit-content;
+    cursor: progress;
+
+}
+
+button span{
+
+    height: 100%;
+    width: 0%;
+    background-color:#05b3b4;
+    position: absolute;
+    border-radius:25px;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span{
+
+    width: 100%;
+ }
+ button:hover{
+    border: none;
+    color: #fff;
+ }
+
+ .text-container{
+    
+    display: flex;
+    flex-direction: column;
+    margin: 0 7%;
+    
+   
+ }
+
+ .text-container h1{
+
+    font-size: 100px;
+    margin: 2%;
+    color: #ffffffb6;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    
+ }
+
+ small{
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 0.5px;
+    margin: 0;
+    padding-left: 7px;
+ }  
+ .text-container button{
+
+    margin-left: 40px;
+
+ }
+ span{
+    color: #0a173aae;
+ }
+
+ .round{
+    width: 45px;
+ }
+
+ .social{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    cursor: pointer;
+    
+ }
+ .help{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    cursor: pointer;
+    
+
+ }
+ .info{
+   
+    cursor: pointer;
+ }
+
+ .container{
+
+    display: flex;
+    justify-content:space-between ;
+    height: 100vh;
+ }
+
+ .left{
+    
+    flex-grow: 1;
+ }
+
+
+.right{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3.5% 10px;
+    background: linear-gradient(#156068, #000729);
+    backdrop-filter: blur(40px);
+}
+
+.bubble img{
+
+    width: 25px;
+    animation: bubble 7s linear infinite;
+}
+
+.bubble{
+
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: -90px;
+    width: 100%;
+    
+}
+@keyframes bubble{
+    
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+}
+50%{
+    opacity: 1;
+}
+70%{
+    
+    opacity: 1;
+}
+100%{
+    transform: translateY(-80vh);
+    opacity: 0;
+}
+
+}
+
+.bubble :nth-child(1){
+
+    width: 40px;
+    animation-delay: 3s;
+
+}
+.bubble :nth-child(2){
+
+    width: 90px;
+    animation-delay: 1s;
+
+}
+.bubble :nth-child(3){
+
+    width: 80px;
+    animation-delay: 7s;
+
+}
+.bubble :nth-child(4){
+
+    width: 70px;
+    animation-delay: 10s;
+
+}
+.bubble :nth-child(5){
+
+    width: 90px;
+    animation-delay: 5s;
+
+}
+.bubble :nth-child(6){
+
+    width: 25px;
+    animation-delay: 2s;
+
+}
+.bubble :nth-child(7){
+
+    width: 40px;
+    animation-delay: 5s;
+
+}
+.bubble :nth-child(8){
+
+    width: 80px;
+    animation-delay: 6s;
+
+}
+.bubble :nth-child(9){
+
+    width: 30px;
+    animation-delay: 4s;
+
+}
+.bubble :nth-child(10){
+
+    width: 50px;
+    animation-delay: 8s;
+
+}
+
